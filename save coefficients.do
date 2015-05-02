@@ -1,3 +1,5 @@
+cd "/Users/oliviadaoust/GitHub/From-Stata-to-R"
+
 set more off
  
 drop _all
@@ -32,8 +34,8 @@ mat list coef // displays [coef]
  
 **** transforms the matrix into a dataset
 //!!change directory!! 
-matsave coef, p("/Users/oliviadaoust/GitHub/From-Stata-to-R") dropall replace 
+matsave coef, dropall replace 
  
 **** save as dataset 
 //!!change directory!! 
-saveold "/Users/oliviadaoust/GitHub/From-Stata-to-R/coef.dta", replace 
+saveold "coef.dta", replace 
