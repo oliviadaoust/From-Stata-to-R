@@ -3,10 +3,11 @@ library(colorspace)
 library(foreign)
 
 # change to your directory
-dir <- "/Users/oliviadaoust/GitHub/From-Stata-to-R/"
+## change to your directory
+setwd("/Users/oliviadaoust/GitHub/From-Stata-to-R/")
 
-# opens the file containing coefficients estimates saved in Stata
-coef <- read.dta(paste(dir, "coef.dta",sep=""))
+## opens the file containing coefficients estimates saved in Stata
+coef <- read.dta("coef.dta")
 coef
 
 ## generate data points (from summary statistics)
